@@ -91,9 +91,9 @@ public class OOP_MIDTERM_Class_Acitivy_2 {
         System.out.println();
 
         if (daysRemaining == 0) {
-            System.out.println("RETURN THE BOOKS!");
+            System.out.println("RETURN THE BOOK!");
         } else if (daysRemaining < 0) {
-            System.out.println("YOU'RE LATE RETURNING THE BOOKS!");
+            System.out.println("YOU'RE LATE RETURNING THE BOOK!");
         } else {
             System.out.println("KEEP READING!");
         }
