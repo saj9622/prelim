@@ -3,15 +3,19 @@ import java.util.Scanner;
 public class OOP_MIDTERM_Class_Acitivy_2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
         String name = "";
+
         while (true) {
             System.out.print("Please enter your name: ");
             name = input.nextLine().trim();
-            if (!name.isEmpty()) {
+
+            if (name.isEmpty()) {
+                System.out.println("Name cannot be BLANK\n");
+            } else if (!name.matches("^[a-zA-Z ]+$")) { 
+                System.out.println("Name must ONLY contain letters and spaces\n");
+            } else {
                 break;
             }
-            System.out.println("Name cannot be BLANK\n");
         }
         System.out.println("Welcome " + name + "!\n");
 
@@ -25,7 +29,7 @@ public class OOP_MIDTERM_Class_Acitivy_2 {
                 }
                 System.out.println("THE BOOK MUST HAVE AT LEAST 1 PAGE.\n");
             } else {
-                System.out.println("ENTER  VALID WHOLE NUMBER.\n");
+                System.out.println("ENTER VALID WHOLE NUMBER.\n");
                 input.next();
             }
         }
@@ -40,7 +44,7 @@ public class OOP_MIDTERM_Class_Acitivy_2 {
                 }
                 System.out.println("PAGES READ CANNOT BE LESS THAN 0 OR MORE THAN " + totalPages + ".\n");
             } else {
-                System.out.println("ENTER  VALID WHOLE NUMBER.\n");
+                System.out.println("ENTER VALID WHOLE NUMBER.\n");
                 input.next();
             }
         }
@@ -55,7 +59,7 @@ public class OOP_MIDTERM_Class_Acitivy_2 {
                 }
                 System.out.println("ALLOTTED DAYS MUST BE AT LEAST 1 DAY.\n");
             } else {
-                System.out.println("ENTER  VALID WHOLE NUMBER.\n");
+                System.out.println("ENTER VALID WHOLE NUMBER.\n");
                 input.next();
             }
         }
@@ -65,12 +69,12 @@ public class OOP_MIDTERM_Class_Acitivy_2 {
             System.out.print("How many days you have been reading: ");
             if (input.hasNextInt()) {
                 daysReading = input.nextInt();
-                if (daysReading >= 0 && daysReading <= allottedDays) {
+                if (daysReading >= 0) {
                     break;
                 }
-                System.out.println("DAYS READING CANNOT BE LESS THAN 0 OR MORE THAN " + allottedDays + ".\n");
+                System.out.println("DAYS READING CANNOT BE LESS THAN 0.\n");
             } else {
-                System.out.println("ENTER  VALID WHOLE NUMBER.\n");
+                System.out.println("ENTER VALID WHOLE NUMBER.\n");
                 input.next();
             }
         }
@@ -78,7 +82,6 @@ public class OOP_MIDTERM_Class_Acitivy_2 {
         double percentageRead = ((double) pagesRead / totalPages) * 100;
         int daysRemaining = allottedDays - daysReading;
         int pagesLeft = totalPages - pagesRead;
-        
         double pagesPerDay = (daysRemaining > 0) ? (double) pagesLeft / daysRemaining : 0.0;
 
         System.out.println();
