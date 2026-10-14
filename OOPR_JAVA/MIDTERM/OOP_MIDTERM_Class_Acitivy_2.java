@@ -84,7 +84,7 @@ public class OOP_MIDTERM_Class_Acitivy_2 {
         System.out.println();
         System.out.printf("1. Percentage read: %.2f%%\n", percentageRead);
         System.out.println("2. Days remaining to return: " + daysRemaining + " day(s)");
-        System.out.printf("3. Pages to read every day: %.2f pages/day\n", pagesPerDay);
+        System.out.printf("3. Pages to read every day: %d pages/day\n", (int) Math.ceil(pagesPerDay));
         System.out.println();
 
         if (daysRemaining == 0) {
