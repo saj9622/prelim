@@ -40,45 +40,53 @@ print(f"8. Modified message: {modified_message}")
 # On the other hand, a bytes object is immutable, meaning once it is created in memory, its values cannot be altered
 
 # PROGRAM 2
-print("\nPROGRAM #2\n")
+print("\nPROGRAM #2")
 #1
+print("\n#1")
 first_name = "Maria"
 last_name = "Santos"
 print(f"First name: {first_name}")
 print(f"Last name: {last_name}")
 
 #2
+print("\n#2")
 full_name = first_name + " " + last_name
 print(f"Full name: {full_name}")
 
 #3
+print("\n#3")
 print(f"First character: {full_name[0]}")
 print(f"Last character: {full_name[-1]}")
 
 #4
+print("\n#4")
 try:
     first_name[0] = "D"
 except TypeError:
     print("Strings are immutable; individual characters cannot be changed directly")
 
 #5
+print("\n#5")
 new_name = "D" + first_name[1:]
 print(f"New name: {new_name}")
 print(f"Original name: {first_name}")
 
 #6
+print("\n#6")
 print("Characters in the full name:")
 for char in full_name:
     print(char)
+
 #7
+print("\n#7")
 sliced_first = full_name[0:5]
 sliced_last = full_name[6:]
 print(f"Sliced first name: {sliced_first}")
 print(f"Sliced last name: {sliced_last}")
 
 #8
+print("\n#8")
 search_char = input("Enter one character to search: ")
-
 if len(search_char) == 1:
     if search_char in full_name:
         index = full_name.find(search_char)
