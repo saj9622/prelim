@@ -90,7 +90,7 @@ public class OOP_MIDTERM_Class_Acitivy_2 {
         if (daysRemaining == 0) {
             System.out.println("RETURN THE BOOKS!");
         } else if (daysRemaining < 0) {
-            System.out.println("RETURN THE BOOKS!");
+            System.out.println("YOU'RE LATE RETURNING THE BOOKS!");
         } else {
             System.out.println("KEEP READING!");
         }
