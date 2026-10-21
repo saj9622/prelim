@@ -21,7 +21,7 @@ class BankAccount {
     }
 }
 
-public class Midterm_Lab_Activity_6 {
+public class OOPR_MIDTERM_LAB_ACTIVITY_6 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
