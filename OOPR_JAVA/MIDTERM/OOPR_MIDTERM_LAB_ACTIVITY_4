@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Midterm_Lab_Activities_4 {
+public class OOPR_MIDTERM_LAB_ACTIVITY_4 {
 
     public static void main(String[] args) {
         Scanner menuScanner = new Scanner(System.in);
