@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class OOPR_MIDTERM_LAB_ACTIVITY_2_1to31 {
+public class OOPR_MIDTERM_LAB_ACTIVITY_3 {
 
     public static void main(String[] args) {
 
