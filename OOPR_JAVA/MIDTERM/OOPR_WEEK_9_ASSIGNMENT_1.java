@@ -9,7 +9,7 @@
 
 import java.util.Scanner;
 
-public class OOPR_WEEK_8_ASSIGNMENT_1 {
+public class OOPR_WEEK_9_ASSIGNMENT_1 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
