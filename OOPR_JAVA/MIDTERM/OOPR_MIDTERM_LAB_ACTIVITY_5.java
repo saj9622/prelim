@@ -84,7 +84,7 @@ class CheckingAccount extends Account {
     }
 }
 
-public class Midterm_Lab_Activities_5 {
+public class OOPR_MIDTERM_LAB_ACTIVITY_5 {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("BANKO NI ZAP");
