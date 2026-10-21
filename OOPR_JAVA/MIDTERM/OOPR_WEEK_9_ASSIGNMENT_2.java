@@ -13,7 +13,7 @@
 
 import java.util.Scanner;
 
-public class OOPR_WEEK_8_ASSIGNMENT_2 {
+public class OOPR_WEEK_9_ASSIGNMENT_2 {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         char continueChoice;
